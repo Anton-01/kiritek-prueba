@@ -21,8 +21,8 @@ Route::get('/', function () {
 Route::get('/books/{page?}', 'BookController@index')->name('books');
 Route::get('/books/details/{id}', 'BookController@show')->name('books.show');
 
-Route::get('/books/create', 'BookController@create');
-Route::post('/books/store', 'BookController@store')->name('books.store');
+Route::get('/books/create/new', 'BookController@create');
+Route::post('/books/create/store', 'BookController@store')->name('books.store');
 
 //Ruta para los comentarios
 Route::post('/comments/store', 'CommentController@store')->name('comments.store');
